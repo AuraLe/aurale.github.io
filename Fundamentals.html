@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Project 0</title>
+<title>Web Technologies Fundamentals</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -88,71 +88,82 @@
         </div>    
     </div>
     <!--//header-->    
-     
+        
     <!--page_container-->
     <div class="page_container">
-        <!--slider-->
-        <div id="main_slider">
-            <div class="camera_wrap" id="camera_wrap_1">
-                <div data-src="img/slider/4.jpg"></div>
-                <div data-src="img/slider/5.jpg"></div>
-                <div data-src="img/slider/6.jpg"></div>                                        
-            </div><!-- #camera_wrap_1 -->
-            <div class="clear"></div>	
-        </div>        
-        <!--//slider-->
-                       
-        <!--planning-->
-        <div class="wrap planning">
-            <div class="container">
-                <div class="row">
-                    <div class="span3">
-                        <a href="introduction.html">
-                        	<span class="img_icon icon1"></span>
-                            <span class="link_title">Introduction</span>
-                        	All the basic information that you need to know if you want to start a Web Developing career.
-                        </a>
-                    </div>
-                    <div class="span3">
-                        <a href="tools.html">
-                        	<span class="img_icon icon2"></span>
-                            <span class="link_title">Tools</span>
-                        	The necessary tools for a Web Developer.
-                        </a>
-                    </div>
-                    <div class="span3">
-                        <a href="discussion.html">
-                        	<span class="img_icon icon3"></span>
-                            <span class="link_title">Discussion</span>
-                        	Discussion topics about how it is to be a Web Developer.
-                        </a>
-                    </div>
-                    <div class="span3">
-                        <a href="HTML_training.html">
-                        	<span class="img_icon icon4"></span>
-                            <span class="link_title">Training</span>
-                        	Simple HTML training for starting a webpage.
-                        </a>
-                    </div>                           	
+    	<div class="breadcrumb">
+        	<div class="wrap">
+                <div class="container">
+                    <a class="breadcrumb-item" href="index.html">Home</a><span>/</span><a class="breadcrumb-item" href="introduction.html">Introduction to Web Developing</a><span>/</span>Web Technologies Fundamentals
                 </div>
+            </div> 
+        </div>
+    	<div class="wrap">
+        	<div class="container">
+                <section>
+                	<div class="row pad5">
+                    	<div class="span12">
+                        	<div class="post">
+                            	<img src="img/blog/1.jpg" alt="" width="600px" style:"display:block; margin:auto;" />
+                                <h1>Web Technologies Fundamentals</h1>
+                                <div class="post_info">                                    
+                                	<div class="fleft">On <span>19 Jan 2017</span></div>                                                       
+                                	<div class="clear"></div>
+                                </div>
+                                <p>Understanding how the web works and which technologies power it will explain the course of action that a web designer may take. Even if you don't plan on becoming a web designer, learning web terminologies will benefit you in the long run due to the popularity of Internet. </p> 
+                                <h2>Introduction to the web</h4>
+                                <p>The Internet is different from the Web. Internet is a massive network of computers around the world while the Web is way to transmit data over the internet.</p>
+                                <p><b>Transmiting data</b> refers to the interaction between clients and servers (clients request data, server deliver data).</p>
+                                <p>When you access an URL, the browser sends request to DNS. DNS translates URL into IP address. Then the browser uses IP address to contact server to ask for contents. Content is eventually returned and displayed on browser.</p> 
+                                <p>IP address is easy for computers to work with, but human can’t remember all of them. Therefore, domain name was created as the human’s version of a site’s unique ID, or IP address. DNS is used to translate IP address from and to Domain name (Internet phone book).</p> 
+                                <p><b>Protocols</b> are simple languages that any computer can use to communicate with each other, regardless of their spec. Different layers of protocol are needed for different tasks.</p> 
+                                <p><b>HTTP</b> acts as the standard protocol to transmit resources on the web. Once a request is sent and received, it’s discarded and forgotten. With such simple and efficient protocol, web has no burden to remember.</p>
+                                <p><b>URL</b> consists of multiple parts. For example, for the link <i><u>http://www.lynda.com</u></i>, <i>http</i> is the protocol, <i>www</i> is subdomain, <i>lynda</i> is domain name, <i>com</is> is top level domain.</i> 
+                                <p><b>Subdomain</b> refers to the default “folder” that contains most web contents on web server. Proper URL format is important for the site to work.</p>
+                                <p>Browsers differ by rendering engines. Web designers need to understand how browsers work in order to ensure that websites work the properly on each browser. In fact, designers should test their pages on multiple browsers and multiple versions of the same browser.</p>
+                                <p><b>World Wide Web Consortium - W3C</b>: standard web protocols in technologies to ensure the consistency of web designs across different browsers and devices.</p>
+                                <p><b>Web server</b> is where website is hosted, usually a computer with specialized set of software and components. Each server has its own stack. <b>Stack</b> means operating system + web server + database server + programming language.</p>
+                                <h2>Front-end Technology</h2>
+                                <p><b>Front-End</b> is the UI layer of website, created with HTML, CSS, and JavaScript. A front-end designer works more like a visual designer than a programmer.</p>
+                                <p><b>HTML - HyperText Markup Language</b> is the standard markup language for web pages. It is simple and essential for any web designer. Latest standard is HTML5, which is compatible with older versions while providing new, advanced features. HTML is used to define the structure of the page.</p>
+                                <p><b>CSS - Cascading Style Sheet</b> means the style sheet language used to control the presentation of HTML. It defines the format and style of the page.</p>
+                                <p><b>JavaScript</b>: the scripting language that adds interactivity and application functionality to sites (dynamic menus, open new window, update data in the browser, etc.). JavaScript is client-side and doesn’t need to be refreshed to work.</p>
+                                <p><b>JavaScript framework</b>: prewritten JavaScript functions to simplify the designing process for developers.</p>  
+                                <p>Common image types include <b>JPEG</b>, <b>GIF</b>, <b>PNG</b> and <b>SVG</b>.</p>
+                                <dl class="dl-horizontal">
+                                    <dt>JPEG</dt> 
+                                    <dd>Widely used. Lossy compression to reduce size. Lower size means lower quality.</dd>
+                                    <dt>GIF</dt> 
+                                    <dd>Most common on the web. Limited to 256 colors. Lossless, but limited color tones. Usually used in solid or flat color artworks. Support transparency and animation, so it's used widely for icons and animations.</dd>
+                                    <dt>PNG</dt>
+                                    <dd>Support transparency. Use lossless compression format. Support more colors like JPEG. Have larger size comparing to JPEG and GIF.</dd>
+                                    <dt>SVG</dt> 
+                                    <dd>Not popular (yet). Vector format > scale to any size without losing quality. Can be edited with web code and CSS properties. Larger in size comparing to other types.</dd>
+                                </dl>
+                                <p><b>API</b>, or "Application Programming Interfaces", provides a set of instructions and standards for using a specific service. API is constantly changing and needs to be updated constantly. API from smaller, lesser known sites can be unstable. HTML5 has allowed higher-level APIs to do specific tasks.</p>
+                                <p><b>HTML5</b> intergrates web applications into HTML (video, animations, plugins, etc.). APIs are intergrated into HTML5 to keep HTML5 from becoming too bulky.</p>                   
+                            </div>                                                   
+                        </div>                                  	
+                	</div>
+                </section>
             </div>
         </div>
-        <!--//planning-->
-        
-        <!--Welcome-->
-        <div class="wrap block">
-            <div class="container welcome_block">
-            	<div class="welcome_line welcome_t"></div>
-            	Interested in creating eye-catching and user-friendly websites?<span>This career may be the one for you!</span>
-                <div class="welcome_line welcome_b"></div>
-            </div>
-        </div>
-        <!--//Welcome-->         
     </div>
     <!--//page_container-->
     
     <!--footer-->
-    <div id="footer">      
+    <div id="footer">  
+        <div class="container" style="margin:5em; margin-top:0em;">
+            <div class="span5"">
+            <h2 class="title"><span>Other posts</span></h2>
+                <ul class="footer-links">
+                    <li><a href="HTML.html"> HTML - HyperText Markup Language.</a></li>
+                    <li><a href="CSS.html"> CSS - Cascading Style Sheets.</a></li>
+                    <li><a href="JavaScript.html"> JavaScript.</a></li>
+                    <li><a href="Bootstrap.html"> Bootstrap.</a></li>                                  
+                </ul>
+            </div>
+        </div>
         <div class="footer_bottom">
             <div class="wrap">
             	<div class="container">
@@ -181,7 +192,7 @@
             </div>
         </div>
     </div>
-    <!--//footer-->    
+    <!--//footer-->        
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
@@ -204,4 +215,3 @@
 	</script>
 </body>
 </html>
-
