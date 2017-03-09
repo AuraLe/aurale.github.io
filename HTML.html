@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Web Technologies Fundamentals</title>
+<title>HTML</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
@@ -94,7 +94,7 @@
     	<div class="breadcrumb">
         	<div class="wrap">
                 <div class="container">
-                    <a class="breadcrumb-item" href="index.html">Home</a><span>/</span><a class="breadcrumb-item" href="introduction.html">Introduction to Web Developing</a><span>/</span>Web Technologies Fundamentals
+                    <a class="breadcrumb-item" href="index.html">Home</a><span>/</span><a class="breadcrumb-item" href="introduction.html">Introduction to Web Developing</a><span>/</span>HTML
                 </div>
             </div> 
         </div>
@@ -105,45 +105,48 @@
                     	<div class="span12">
                         	<div class="post">
                                 <figure>
-                            	<img src="img/blog/1.jpg" alt="" width="600px" style:"display:block; margin:auto;" />
+                                <a href="img/blog/2b.png" title="periodic table of html5 elements"><img src="img/blog/2.jpg" alt="" width="600px" style:"display:block; margin:auto;" /></a>
+                                <figcaption style="font-size:0.8em;"><i>Click on image for fullsize.</i></figcaption>
                                 </figure>
-                                <h1>Web Technologies Fundamentals</h1>
+                                <h1>HTML</h1>
                                 <div class="post_info">                                    
-                                	<div class="fleft">On <span>19 Jan 2017</span></div>                                                       
+                                	<div class="fleft">On <span>26 Jan 2017</span></div>                                                       
                                 	<div class="clear"></div>
                                 </div>
-                                <p>Understanding how the web works and which technologies power it will explain the course of action that a web designer may take. Even if you don't plan on becoming a web designer, learning web terminologies will benefit you in the long run due to the popularity of Internet. </p> 
-                                <h2>Introduction to the web</h4>
-                                <p>The Internet is different from the Web. Internet is a massive network of computers around the world while the Web is way to transmit data over the internet.</p>
-                                <p><b>Transmiting data</b> refers to the interaction between clients and servers (clients request data, server deliver data).</p>
-                                <p>When you access an URL, the browser sends request to DNS. DNS translates URL into IP address. Then the browser uses IP address to contact server to ask for contents. Content is eventually returned and displayed on browser.</p> 
-                                <p>IP address is easy for computers to work with, but human can’t remember all of them. Therefore, domain name was created as the human’s version of a site’s unique ID, or IP address. DNS is used to translate IP address from and to Domain name (Internet phone book).</p> 
-                                <p><b>Protocols</b> are simple languages that any computer can use to communicate with each other, regardless of their spec. Different layers of protocol are needed for different tasks.</p> 
-                                <p><b>HTTP</b> acts as the standard protocol to transmit resources on the web. Once a request is sent and received, it’s discarded and forgotten. With such simple and efficient protocol, web has no burden to remember.</p>
-                                <p><b>URL</b> consists of multiple parts. For example, for the link <i><u>http://www.lynda.com</u></i>, <i>http</i> is the protocol, <i>www</i> is subdomain, <i>lynda</i> is domain name, <i>com</is> is top level domain.</i> 
-                                <p><b>Subdomain</b> refers to the default “folder” that contains most web contents on web server. Proper URL format is important for the site to work.</p>
-                                <p>Browsers differ by rendering engines. Web designers need to understand how browsers work in order to ensure that websites work the properly on each browser. In fact, designers should test their pages on multiple browsers and multiple versions of the same browser.</p>
-                                <p><b>World Wide Web Consortium - W3C</b>: standard web protocols in technologies to ensure the consistency of web designs across different browsers and devices.</p>
-                                <p><b>Web server</b> is where website is hosted, usually a computer with specialized set of software and components. Each server has its own stack. <b>Stack</b> means operating system + web server + database server + programming language.</p>
-                                <h2>Front-end Technology</h2>
-                                <p><b>Front-End</b> is the UI layer of website, created with HTML, CSS, and JavaScript. A front-end designer works more like a visual designer than a programmer.</p>
-                                <p><b>HTML - HyperText Markup Language</b> is the standard markup language for web pages. It is simple and essential for any web designer. Latest standard is HTML5, which is compatible with older versions while providing new, advanced features. HTML is used to define the structure of the page.</p>
-                                <p><b>CSS - Cascading Style Sheet</b> means the style sheet language used to control the presentation of HTML. It defines the format and style of the page.</p>
-                                <p><b>JavaScript</b>: the scripting language that adds interactivity and application functionality to sites (dynamic menus, open new window, update data in the browser, etc.). JavaScript is client-side and doesn’t need to be refreshed to work.</p>
-                                <p><b>JavaScript framework</b>: prewritten JavaScript functions to simplify the designing process for developers.</p>  
-                                <p>Common image types include <b>JPEG</b>, <b>GIF</b>, <b>PNG</b> and <b>SVG</b>.</p>
-                                <dl class="dl-horizontal">
-                                    <dt>JPEG</dt> 
-                                    <dd>Widely used. Lossy compression to reduce size. Lower size means lower quality.</dd>
-                                    <dt>GIF</dt> 
-                                    <dd>Most common on the web. Limited to 256 colors. Lossless, but limited color tones. Usually used in solid or flat color artworks. Support transparency and animation, so it's used widely for icons and animations.</dd>
-                                    <dt>PNG</dt>
-                                    <dd>Support transparency. Use lossless compression format. Support more colors like JPEG. Have larger size comparing to JPEG and GIF.</dd>
-                                    <dt>SVG</dt> 
-                                    <dd>Not popular (yet). Vector format > scale to any size without losing quality. Can be edited with web code and CSS properties. Larger in size comparing to other types.</dd>
-                                </dl>
-                                <p><b>API</b>, or "Application Programming Interfaces", provides a set of instructions and standards for using a specific service. API is constantly changing and needs to be updated constantly. API from smaller, lesser known sites can be unstable. HTML5 has allowed higher-level APIs to do specific tasks.</p>
-                                <p><b>HTML5</b> intergrates web applications into HTML (video, animations, plugins, etc.). APIs are intergrated into HTML5 to keep HTML5 from becoming too bulky.</p>                   
+                                <p>Out of the three important web design languages, HTML has the utmost importance. CSS and JavaScript may control how a webpage looks, but it is HTML that decides on the page's structural contents.</p> 
+                                <h2>Basic page structure</h4>
+                                    <p>HTML tags require an opening tag and a closing tag to work.</p>
+                                    <p>The <b>&lt;head&gt;</b> tag includes a page's basic information and appear at the top of an HTML document. This area is invisible when viewed in the browser.</p>
+                                    <p>The <b>DOCTYPE</b> declaration lets the user agents know which version of HTML is being used.</p>
+                                    <p>The <b>&lt;meta&gt;</b> tag describes the UTF encoding that will be used.</p> 
+                                    <p>The <b>&lt;title&gt;</b> tag declares the page's title. Every page on a website should have a unique title.</p> 
+                                    <p>The <b>&lt;body&gt;</b> tag indicates a page's body. The body contains everything that you see in a webpage when opened on a browser.</p>          
+                                <h2>Formatting Page Content</h2>
+                                    <p>The heading tags, <b>&lt;h1&gt;</b> to <b>&lt;h6&gt;</b>, serve the purpose of arranging the webpage into a hierarchy structure. The size of each heading gets smaller as the tag number goes up.</p>
+                                    <p>Aside from headers, paragraph (<b>&lt;p&gt;</b>) may be the most basic formatting tag. If you don't put a text inside a tag, your browser will automatically assume it to be a paragraph. Since a paragraph may get very long and you may forget to close the &lt;p&gt; tag, the advice here is to open up and close a tag before putting content in between.</p>
+                                    <p>Some tags don't need to be closed, and <b>&lt;br&gt;</b> is one of those. Line break tag is used when you want to forcefully skip down a line.</p>
+                                    <p>Emphasizing tags include, but are not limited to, <b>&lt;b&gt;</b>, <b>&lt;strong&gt;</b>, <b>&lt;i&gt;</b> and <b>&lt;em&gt;</b>. The first two will make text goes bold, while the latter two make text becomes italic. The difference is that &lt;strong&gt; and &lt;em&gt; will be recognized as an emphasis by screen reader or other accessibility tools.</p>
+                                    <p>Named character entity is used for displaying special characters that are not on the usual keyboard, or may otherwise cause errors in an HTML file. A prime example of such error would be the angle brackets "<b>&lt;</b>" and "<b>&gt;</b>". To display those characters properly without any issues, you need to start with the ampersand (<span style="color:red;">&amp;</span>), then the name entity for that particular character, and closing with a semicolon (<span style="color:red;">;</span>). Example of how to type &amp; in an HTML document: <b>&amp;amp;</b>.</p>
+                                    <p>Non-breaking space, or <b>&amp;nbsp;</b>, is used when you need to add more space into your document without spamming spacebar. It will create white spaces but will not break down to a new line.</p>
+                                    <p>To display images, the tag <b>&lt;img&gt;</b> is used. The most basic syntax should be <b>&lt;img src="#" &gt;</b>, with the image's direct link replacing the #. The image tag doesn't need to have a closing tag. Usually the parameter <b>title=" "</b> is used to let screen reader knows what kind of image it is.</p>
+                                <h2>Structuring Content</h2>
+                                    <p>The structural content of a page created by HTML allows us to understand the page's meaning better. This semantics may not look any different to us, but for those who do not rely on visual use, search engines for example, it is very important to classify webpage information in a logical manner.</p>
+                                    <p><b>&lt;nav&gt;</b> elements are used to indicate navigation within your websites. They are usually found at menus.</p>
+                                    <p><b>&lt;article&gt;</b> represents a complete self-contained composition in a document, page, application or site. <b>&lt;section&gt;</b> represents a generic section of a document. These two tags often cause confusion for web designers, so it all depends on your own judgement as to where to use them.</p>
+                                    <p><b>&lt;aside&gt;</b> is a new element in HTML5 that is equivalent to the content within a sidebar. It can also be used for typographic effects like pull quotes, or advertisements.</p>
+                                    <p><b>&lt;div&gt;</b> is used when you don't really need any semantic meaning for your content. It is a very popular tag, and is intended for when you want to group contents together for stylistic purpose. It can be used anywhere within the document. </p>
+                                    <p><b>&lt;header&gt;</b> typically contains a group of introductory or navigational aids. For introduction purpose, it represents information on its nearest parent sectioning content. If it doesn't have a parent element then it represents the whole page.</p>
+                                <h2>Creating Links</h2>
+                                    <p><b>&lt;a href="#"&gt;</b> is the simplest form of an anchor tag - a tag with link leading to any other places on the web or within the website, or even webpage. The anchor tag can have many other attributes. <b>target=" "</b> attribute controls how a new page is opened: in a new window or new tab. The <b>rel=" "</b> attribute defines the relationship between the target object and the link object. The <b>title=" "</b> attribute gives the link a title, which makes it more accessible to assistive devices or search engines.</p>
+                                    <p>To link to pages within the website, instead of a full web address, you only need to indicate the path leading to where the page or file is located, starting from where your current page is. Using <b>"folder_2/page2.html"</b> means your current page (<i>page1.html</i>) in the same directory as <i>folder_2</i>, and the page <i>page2.html</i> is within that folder. Using the same example, when you use the link <b>"../page1.html"</b> on page <i>page2.html</i>, it will lead you back to <i>page1.html</i>.</p>
+                                    <p>For external links, the one important thing that you should always remember is to include the protocol (usually <i>http</i> or <i>https</i>) with the link, or else it won't work.</p>
+                                    <p>On the occasion that you need to link to a downloadable resource, you can give your anchor tag the attribute <b>download</b>. The attribute will force your browser to download the file, even if it can be read by the browser.</p>
+                                    <p>In order to jump to a specific point within a page, first you need to assign a unique id for the destination point, then use the normal anchor tag with <b>#id</b> instead of the normal link address.</p>
+                                        <div class="well" style="margin: 0% 10%; text-align: center;">
+                                            <a href="#jump">Click here to jump!</a><span style="display:inline-block">&nbsp; | &lt;a href="#jump">Click here to jump!&lt;/a&gt;</span> 
+                                            <span style="height: 300px; display: block;">&nbsp;</span>                                
+                                            <span id="jump" style="color: red;">You've jumped here!</span><span style="display:inline-block">&nbsp; | &lt;span id="jump">You've jumped here!&lt;/span&gt;</span>
+                                        </div>
                             </div>                                                   
                         </div>                                  	
                 	</div>
@@ -159,7 +162,7 @@
             <div class="span5"">
             <h2 class="title"><span>Other posts</span></h2>
                 <ul class="footer-links">
-                    <li><a href="HTML.html"> HTML - HyperText Markup Language.</a></li>
+                    <li><a href="Fundamentals.html"> Web Technologies Fundamentals.</a></li>
                     <li><a href="CSS.html"> CSS - Cascading Style Sheets.</a></li>
                     <li><a href="JavaScript.html"> JavaScript.</a></li>
                     <li><a href="Bootstrap.html"> Bootstrap.</a></li>                                  
