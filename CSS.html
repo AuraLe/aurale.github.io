@@ -107,6 +107,333 @@
                                 <figure>
                                 <img src="img/blog/3.jpg" width="500px" alt="" style:"display:block; margin:auto;" /> 
                                 </figure>
+                                <h1>CSS - Cascading Style Sheets</h1>
+                                <div class="post_info">                                    
+                                	<div class="fleft">On <span>2 Feb 2017</span></div>                                                       
+                                	<div class="clear"></div>
+                                </div>
+                                <p>CSS and HTML are closely related and usually go side-by-side. In fact, it is pretty much impossible to talk about one without mentioning the other. HTML decides the content while CSS takes care of the look. Starting designers should learn both of them at the same time.</p> 
+                                <h2>Introduction</h2>
+                                <p>Existing browsers kind of agreed on a common default styling for all webpages, a "code" on how certain HTML tags should look like when displayed on the browser. To bring uniqueness to every website and webpage out there, CSS is used to overwrite that default styling.</p>
+                                <p>CSS will save a lot of work, since it can control the layout and styling of multiple webpages all at once.</p>
+
+                                <h2>Syntax</h2>
+                                <img src="img/selector.gif" title="css selector" alt="" width="540px" />
+                                <p>A CSS rule-set consists of a selector and a declaration block. The selector points to the HTML element you want to style. The declaration block contains one or more declarations separated by semicolons. Each declaration includes a CSS property name and a value, separated by a colon. A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.</p>
+                                <h2>CSS Selectors</h2>
+                                <p>CSS selectors are used to "find" (or select) HTML elements based on their element name, id, class, attribute, and more.</p>    
+
+                                <h3>Element Selector</h3>
+                                <p>The element selector selects elements based on the element name. You can select a <b>&lt;p&gt;</b> elements on a page like this (in this case, all <b>&lt;p&gt;</b> elements will be center-aligned, with a red text color):</p>
+                                <div class="well span5">
+                                    <span style="color:brown">
+                                    p
+                                    <span style="color:black">{</span><span style="color:red"><br>
+                                    &nbsp;&nbsp;&nbsp;
+                                    text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>
+                                    &nbsp;&nbsp;&nbsp;
+                                    color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>
+                                    </span><span style="color:black">}</span>
+                                    </span>
+                                </div>
+                                <div class="clear">&nbsp;</div>
+
+                                <h3>ID Selector</h3>
+                                <p>The id selector uses the id attribute of an HTML element to select a specific element. The id of an element should be unique within a page, so the id selector is used to select one unique element. To select an element with a specific id, write a hash (#) character, followed by the id of the element. The style rule below will be applied to the HTML element with <b>id="para1"</b></p>
+                                <div class="well span5">
+                                    <span style="color:brown">
+                                    #para1
+                                    <span style="color:black">{</span><span style="color:red"><br>
+                                    &nbsp;&nbsp;&nbsp;
+                                    text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>
+                                    &nbsp;&nbsp;&nbsp;
+                                    color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>
+                                    </span><span style="color:black">}</span>
+                                    </span>
+                                </div>
+                                <div class="clear">&nbsp;</div>
+                                <div class="btn disabled" style="margin-bottom:16px;"><i class="icon-search icon-exclamation-sign"></i> ID name cannot start with a number.</div>
+                                
+                                <h3>Class Selector</h3>
+                                <p>The class selector selects elements with a specific class attribute. To select elements with a specific class, write a period (.) character, followed by the name of the class. In the example below, all HTML elements with class="center" will be red and center-aligned:</p>
+                                <div class="well span5">
+                                    <span style="color:brown">
+                                    .center <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br></span><span style="color:black">}</span>
+                                    </span>
+                                </div>
+                                <div class="clear">&nbsp;</div>
+                                <p>You can also specify that only specific HTML elements should be affected by a class. In the example below, only <b>&lt;p&gt;</b> elements with class="center" will be center-aligned:</p>
+                                <div class="well span5">
+                                    <span style="color:brown">
+                                    p.center <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br></span><span style="color:black">}</span>
+                                    </span>
+                                </div>
+                                <div class="clear">&nbsp;</div>
+                                <p>HTML elements can also refer to more than one class. In the example below, the <b>&lt;p&gt;</b> element will be styled according to class="center" and to class="large":</p>
+                                <div class="well span5">
+                                    <span style="color:brown">
+                                    <span style="color:mediumblue">&lt;</span>p<span style="color:red"> class<span style="color:mediumblue">="center large"</span></span><span style="color:mediumblue">&gt;</span></span>This paragraph refers to two classes.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span>
+                                    </span>
+                                </div>
+                                <div class="clear">&nbsp;</div>
+                                <div class="btn disabled" style="margin-bottom:16px;"><i class="icon-search icon-exclamation-sign"></i> Class name cannot start with a number.</div>
+
+                                <h3>Grouping Selectors</h3>
+                                <p>If you have elements with the same style definitions, it will be better to group the selectors, to minimize the code. To group selectors, separate each selector with a comma, like this:</p>
+                                <div class="well span5">
+                                    <span style="color:brown">
+                                    h1, h2, p
+                                    <span style="color:black">{</span><span style="color:red"><br>
+                                    &nbsp;&nbsp;&nbsp;
+                                    text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br></span><span style="color:black">}</span>
+                                    </span>
+                                </div>
+                                <div class="clear">&nbsp;</div>
+
+                                <h2>CSS Comments</h2>
+                                <p>Comments are used to explain the code, and may help when you edit the source code at a later date. Comments are ignored by browsers. A CSS comment starts with /* and ends with */. Comments can also span multiple lines:</p>
+                                <div class="well span5">
+                                    <span style="color:brown">
+                                    p
+                                    <span style="color:black">{</span><span style="color:red"><br>
+                                    &nbsp;&nbsp;&nbsp;
+                                    color<span style="color:mediumblue"><span style="color:black">:</span> red<span style="color:black">;</span></span><br>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <span style="color:green">/* This is a single-line comment */</span><br>
+                                    &nbsp;&nbsp;&nbsp;
+                                    text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span><br>
+                                    </span><span style="color:black">}</span><br><br><span style="color:green">/* This is<br>a multi-line<br>comment */</span>
+                                    </span>
+                                </div>
+                                <div class="clear">&nbsp;</div>
+
+                                <h2>Inserting CSS to an HTML document</h2>
+                                <p>There are three ways of inserting CSS: external, internal, and inline. External is the most popular method because of its convenience. Internal comes in second place due to its handiness, while internal is the least popular choice.</p>
+
+                                <h3>External Style Sheet</h3>
+                                <p>With an external style sheet, you can change the look of an entire website by changing just one file! Each page must include a reference to the external style sheet file inside the &lt;link&gt; element. The &lt;link&gt; element goes inside the &lt;head&gt; section:</p>
+                                <div class="well span5">
+                                    <span style="color:brown">
+                                    <span style="color:mediumblue">&lt;</span>head<span style="color:mediumblue">&gt;</span></span><br>
+                                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>link<span style="color:red"> rel<span style="color:mediumblue">="stylesheet"</span> type<span style="color:mediumblue">="text/css"</span>
+                                    href<span style="color:mediumblue">="mystyle.css"</span></span><span style="color:mediumblue">&gt;</span></span><br>
+                                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>/head<span style="color:mediumblue">&gt;</span>
+                                    </span>
+                                </div>
+                                <div class="clear">&nbsp;</div>
+                                <p>An external style sheet can be written in any text editor. The file should not contain any html tags. The style sheet file must be saved with a .css extension. Here is how the "mystyle.css" looks:</p>
+                                <div class="well span5">
+                                    <span style="color:brown">
+                                    body <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span> lightblue<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br><br>h1 <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; 
+                                    color<span style="color:mediumblue"><span style="color:black">:</span> navy<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; margin-left<span style="color:mediumblue"><span style="color:black">:</span> 20px<span style="color:black">;</span></span><br></span><span style="color:black">}</span>
+                                    </span>
+                                </div>
+                                <div class="clear">&nbsp;</div>
+                                <div class="btn disabled" style="margin-bottom:16px;"><i class="icon-search icon-exclamation-sign"></i> Do not add a space between the property value and the unit (such as <code>margin-left: 20 px;</code>). The correct way is: <code>margin-left: 20px;</code></div>
+
+                                <h3>Internal Style Sheet</h3>
+                                <p>An internal style sheet may be used if one single page has a unique style. Internal styles are defined within the &lt;style&gt; element, inside the &lt;head&gt; section of an HTML page:</p>
+                                <div class="well span5">
+                                    <span style="color:brown">
+                                    <span style="color:mediumblue">&lt;</span>head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>style<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><br>body <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span> linen<span style="color:black">;</span></span><br></span><span style="color:black">}</span><br><br>
+                                    h1 <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; color<span style="color:mediumblue"><span style="color:black">:</span> maroon<span style="color:black">;</span></span><br>&nbsp;&nbsp;&nbsp; margin-left<span style="color:mediumblue"><span style="color:black">:</span> 40px<span style="color:black">;</span></span><br></span><span style="color:black">}</span> <br>
+                                    </span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/style<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/head<span style="color:mediumblue">&gt;</span>
+                                    </span>
+                                </div>
+                                <div class="clear">&nbsp;</div>
+
+                                <h3>Inline Styles</h3>
+                                <p>An inline style may be used to apply a unique style for a single element. To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property. The example below shows how to change the color and the left margin of a &lt;h1&gt; element:</p>
+                                <div class="well span5">
+                                    <span style="color:brown">
+                                    <span style="color:mediumblue">&lt;</span>h1<span style="color:red"> style<span style="color:mediumblue">="color:blue;margin-left:30px;"</span></span><span style="color:mediumblue">&gt;</span></span>This is a heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span>
+                                    </span>
+                                </div>
+                                <div class="clear">&nbsp;</div>
+                                <div class="btn disabled" style="margin-bottom:16px;"><i class="icon-search icon-exclamation-sign"></i> An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.</div>                                
+                            </div>                                                   
+                        </div>                                  	
+                	</div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!--//page_container-->
+    
+    <!--footer-->
+    <div id="footer">  
+        <div class="container" style="margin:5em; margin-top:0em;">
+            <div class="span5"">
+            <h2 class="title"><span>Other posts</span></h2>
+                <ul class="footer-links">
+                    <li><a href="Fundamentals.html"> Web Technologies Fundamentals.</a></li>
+                    <li><a href="HTML.html"> HTML - HyperText Markup Language.</a></li>
+                    <li><a href="JavaScript.html"> JavaScript.</a></li>
+                    <li><a href="Bootstrap.html"> Bootstrap.</a></li>                                  
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="wrap">
+            	<div class="container">
+                	<div class="row">
+                		<div class="span5">
+                        	<div class="foot_logo"><a href="index.html"><img src="img/Fresno_City_College_foot.png" alt="" /></a></div>    
+                        	<div class="copyright">&copy; 2017 Aura Le. CIT-82 Web Technologies.</div>                        
+                        </div>
+                        <div class="span7">
+                        	<div class="foot_right_block">
+                            	<div class="fright">
+                                	<form action="#" method="post">
+                                        <input class="inp_search" name="name" type="text" value="Search the Site" onfocus="if (this.value == 'Search the Site') this.value = '';" onblur="if (this.value == '') this.value = 'Search the Site';" />                                        
+                                    </form>
+                                </div>
+                                <div class="follow_us">
+                                	<ul>
+                                        <li><a rel="tooltip" href="#" title="Facebook" class="facebook">Facebook</a></li>
+                                        <li><a rel="tooltip" href="#" title="Twitter" class="twitter">Twitter</a></li>
+                                    </ul>
+                                </div>                      
+                            </div>                            
+                        </div>
+                    </div>	
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//footer-->        
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+    <script type="text/javascript" src="js/camera.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+    <script type="text/javascript" src="js/myscript.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){	
+			//Slider
+			$('#camera_wrap_1').camera();
+			
+			//Featured works & latest posts
+			$('#mycarousel, #mycarousel2, #newscarousel').jcarousel();													
+		});		
+	</script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" id="camera-css"  href="css/camera.css" type="text/css" media="all">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/theme.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/skins/tango/skin.css" />
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<!--[if lt IE 9]>
+	<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->    
+</head>
+<body>
+	<!--header-->
+    <div class="header">
+    	<div class="wrap">
+        	<div class="navbar navbar_ clearfix">
+            	<div class="container">
+                    <div class="row">
+                        <div class="span4">
+                        	<div class="logo"><a href="index.html"><img src="img/Fresno_City_College.png" alt="" /></a></div>                        
+                        </div>
+                        <div class="span8">
+                        	<div class="follow_us">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/FresnoCityCollege/" class="facebook">Facebook</a></li>
+                                    <li><a href="https://twitter.com/fresnocity" class="twitter">Twitter</a></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                            <nav id="main_menu">
+                                <div class="menu_wrap">
+                                    <ul class="nav sf-menu">
+                                      <li class="sub-menu"><a href="introduction.html">Intro to Web Developing</a>
+                                          <ul>
+                                              <li><a href="Fundamentals.html"><span>-</span>Web Technologies Fundamentals</a></li>
+                                              <li><a href="HTML.html"><span>-</span>HTML</a></li>
+                                              <li><a href="CSS.html"><span>-</span>CSS</a></li>
+                                              <li><a href="JavaScript.html"><span>-</span>JavaScript</a></li>      
+                                              <li><a href="Bootstrap.html"><span>-</span>Bootstrap</a></li>                                     
+                                          </ul>                                          
+                                      </li>
+                                      <li class="sub-menu"><a href="tools.html">Web Developing Tools</a>
+                                           <ul>
+                                              <li><a href="ChromeDevTools.html"><span>-</span>Chrome DevTools</a></li>
+                                              <li><a href="Editors.html"><span>-</span>Editors - VS Code</a></li>
+                                              <li><a href="UTF-8.html"><span>-</span>UTF-8</a></li>
+                                              <li><a href="GitHub-Git.html"><span>-</span>GitHub and Git</a></li>
+                                              <li><a href="Front-end-Frameworks.html"><span>-</span>Other front-end frameworks</a></li>                                      
+                                          </ul>
+                                      </li>                                  
+                                     <li class="sub-menu"><a href="discussion.html">Discussions</a>
+                                           <ul>
+                                              <li><a href="Becoming.html"><span>-</span>Becoming a web developer</a></li>
+                                              <li><a href="WebDev-Jobs.html"><span>-</span>Web dev and web-related jobs</a></li>
+                                              <li><a href="WebSite-WebApp.html"><span>-</span>Web sites vs Web apps</a></li>
+                                              <li><a href="DarkWeb.html"><span>-</span>Dark web</a></li>
+                                              <li><a href="UI-UX-Designer.html"><span>-</span>Becoming UI/UX designer</a></li>                                      
+                                          </ul>
+                                      </li>  
+                                      <li class="sub-menu"><a href="SEO.html">SEO for Ecommerce</a>
+                                           <ul>
+                                                <li><a href="SEO-Understand.html"><span>-</span>Understanding SEO and the customers</a></li>
+                                                <li><a href="SEO-Examine.html"><span>-</span>Examining your website</a></li>
+                                                <li><a href="SEO-Apply.html"><span>-</span>Applying SEO</a></li>
+                                                <li><a href="SEO-Optimize.html"><span>-</span>Implementing optimization</a></li>
+                                                <li><a href="SEO-Tools.html"><span>-</span>Incorporating SEO tools</a></li>                             
+                                          </ul>
+                                      </li>  
+                                    </ul>
+                                </div>
+                             </nav>                            
+                        </div>
+                    </div>                
+                </div>
+             </div>
+        </div>    
+    </div>
+    <!--//header-->    
+        
+    <!--page_container-->
+    <div class="page_container">
+    	<div class="breadcrumb">
+        	<div class="wrap">
+                <div class="container">
+                    <a class="breadcrumb-item" href="index.html">Home</a><span>/</span><a class="breadcrumb-item" href="introduction.html">Introduction to Web Developing</a><span>/</span>CSS
+                </div>
+            </div> 
+        </div>
+    	<div class="wrap">
+        	<div class="container">
+                <section>
+                	<div class="row pad5">
+                    	<div class="span12">
+                        	<div class="post">
+                                <figure>
+                                <img src="img/blog/3.jpg" width="500px" alt="" style:"display:block; margin:auto;" /> 
+                                </figure>
                                 <h1>CSS</h1>
                                 <div class="post_info">                                    
                                 	<div class="fleft">On <span>2 Feb 2017</span></div>                                                       
@@ -187,3 +514,4 @@
 	</script>
 </body>
 </html>
+>>>>>>> 89c7ad133ad98fd1be14942d7a027ebb6a255988
